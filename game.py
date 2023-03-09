@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 class Main(Frame):
     def __init__(self, root):
         super(Main, self).__init__(root)
-        self.startUI()
+        self.UI()
 
-    def startUI(self):
+    def UI(self):
         self.win = self.drow = self.lose = self.count = 0
         firstbutton = Button(root, text="Камень",bg="#8D6E63", font=("Calibri", 50),  command=lambda btn=1: self.btn_click(btn))
         secondbutton = Button(root, text="Ножницы", bg="#9E9E9E", font=("Calibri", 50), command=lambda btn=2: self.btn_click(btn))
